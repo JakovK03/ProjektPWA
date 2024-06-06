@@ -1,0 +1,397 @@
+:root {
+    --header_height: 60px;
+    --header_text: 16px;
+    --light_gray: gainsboro;
+    --dark_gray: rgb(112, 112, 112);
+}
+
+body {
+    margin: 0px;
+}
+
+header {
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: black;
+    padding: 2px 15% 2px 15%;
+    align-items: center;
+    height: auto;
+}
+
+header > nav > ul > li > img, header > nav > ul > li > a {
+    border-right: 2px solid white;
+}
+
+header > nav > ul > li > img {
+    height: var(--header_height);
+}
+
+header > nav {
+    width: 75%;
+    display: flex;
+    align-items: center;
+}
+
+header > nav > ul {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+}
+
+header > nav > ul > li {
+    height: var(--header_height);
+    float: left;
+}
+
+header > nav > ul > li > a {
+    height: var(--header_text);
+    text-align: center;
+    padding: calc((var(--header_height) - var(--header_text))/2) 28px;
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-size: var(--header_text);
+}
+
+.w70 {
+    width: 70%;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.w50 {
+    width: 50%;
+    padding-left: 25%;
+    padding-right: 25%;
+}
+
+.w70np {
+    width: 70%;
+}
+
+.w30np {
+    width: 30%;
+}
+
+.w20np {
+    width: 20%;
+}
+
+footer {
+    background-color: var(--dark_gray);
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+footer * {
+    color: white;
+}
+
+footer > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+footer > div > p {
+    margin: 0px;
+}
+
+#home_greet {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#home_greet > * {
+    font-size: 2.2em;
+}
+
+#home_greet > p {
+    color: var(--light_gray);
+}
+
+#home_news_container > h2 , #news_content > h1 {
+    border-left: 4px solid red;
+}
+
+#home_sports_container > h2, #sports_content > h1 {
+    border-left: 4px solid yellow;
+}
+
+#admin_board > h1 {
+    border-left: 4px solid blue;
+}
+
+#home_sports_container > h2, #home_news_container > h2, #news_content > h1, #sports_content > h1, #admin_board > h1 {
+    padding-left: 4px;
+}
+
+#news_content > h1, #sports_content > h1, #admin_board > h1 {
+    font-size: 29px;
+}
+
+#home_news_container, #home_sports_container {
+    display: flex;
+    flex-direction: column;
+}
+
+#home_news_container > div > a, #home_sports_container > div > a {
+    width: 31%;
+    padding: 1%;
+}
+
+#home_news_container > div, #home_sports_container > div {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+#home_news_container > div > a > article > img, #home_sports_container > div > a > article > img {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+#home_news_container > div > a, #home_sports_container > div > a {
+    text-decoration: none;
+    color: black;
+}
+
+#article_sports_banner {
+    background-color: yellow;
+}
+
+#article_news_banner {
+    background-color: red;
+}
+
+.article_banner {
+    width: 50%;
+    padding: 30px 25% 30px 25%;
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+#article_content {
+    margin-bottom: 30px;
+}
+
+#article_content > figure {
+    width: 100%;
+    margin: 0px;
+}
+
+#article_content > figure > img {
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+#article_content > pre {
+    width: 100%;
+    display: inline;
+    white-space: pre-wrap;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 17px;
+}
+
+.flex_container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#news_sports_container {
+    width: 100%;
+}
+
+#news_sports_container > a {
+    padding: 1%;
+    width: calc(46% - 4px);
+    margin: 1%;
+    border: 2px solid black;
+    text-decoration: none;
+    color: black;
+}
+
+#news_sports_container > a > img {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+#news_sports_nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px 20% 10px 20%;
+}
+
+#news_sports_nav > a, #news_sports_nav > div {
+    padding: 4px;
+    text-decoration: none;
+    color: black;
+    border: 2px solid black;
+    font-size: 20px;
+}
+
+#news_sports_nav > a {
+    background-color: var(--light_gray);
+}
+
+#news_sports_nav > div {
+    background-color: var(--dark_gray);
+}
+
+#news_sports_nav > a:hover {
+    color: white;
+}
+
+#admin_add_news > form > * {
+    margin-bottom: 10px;
+}
+
+#admin_add_news > form > div {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+#admin_add_news > form > div > div {
+    width: calc(100% / 3);
+}
+
+#admin_add_news > form > textarea {
+    width: 100%;
+    height: 600px;
+}
+
+#admin_add_news > form > #title, #admin_add_news > form > #title_small {
+    width: 100%;
+}
+
+.error {
+    margin-top: -10px;
+    margin-left: 5px;
+    margin-bottom: 10px;
+    color: red;
+}
+
+.error_register {
+    color: red;
+}
+
+#admin_control {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#admin_control > aside {
+    padding-right: 10%;
+    padding-top: 20px;
+    margin-bottom: 40px;
+}
+
+#admin_control > aside > ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    border: 2px solid black;
+}
+
+#admin_control > aside > ul > li > a {
+    display: block;
+    width: calc(100% - 4px - 8px);
+    text-align: center;
+    border: 2px solid black;
+    margin: 4px;
+    padding: 10px 0px 10px 0px;
+    color: black;
+    text-decoration: none;
+}
+
+#admin_control > aside > ul > li > a:hover {
+    background-color: lightblue;
+}
+
+.flex_v {
+    display: flex;
+    flex-direction: column;
+}
+
+#registration_form, #signin_form {
+    margin-right: 10%;
+    margin-bottom: 40px;
+}
+
+#registration_form > form * {
+    margin-bottom: 7px;
+}
+
+.msg {
+    font-family: Monaco, monospace;
+    font-size: 17;
+    line-height: 100%;
+    background-color: #eee;
+    padding: 0.4em;
+    letter-spacing: -0.05em;
+    word-break: normal;
+}
+
+.admin_remove_news_table_img {
+    width: 100%;
+    height: 90px;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.small_icon {
+    height: 30px;
+    width: 30px;
+}
+
+#admin_remove_news_table, #admin_remove_user_table {
+    border: 2px solid black;
+    margin-bottom: 30px;
+    height: min-content;
+}
+
+#admin_remove_news_table nav, #admin_remove_user_table nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: calc(100% - 8px);
+    padding: 4px;
+}
+
+#admin_remove_news_table nav > a, #admin_remove_news_table nav > div, #admin_remove_user_table nav > a, #admin_remove_user_table nav > div {
+    padding: 4px;
+    text-decoration: none;
+    color: black;
+    border: 2px solid black;
+    font-size: 20px;
+}
+
+#admin_remove_news_table nav > a:hover, #admin_remove_user_table nav > a:hover {
+    color: white;
+}
+
+#admin_remove_news_table nav > a, #admin_remove_user_table nav > a {
+    background-color: var(--light_gray);
+}
+
+#admin_remove_news_table nav > div, #admin_remove_user_table nav > div {
+    background-color: var(--dark_gray);
+}
+
+mark {
+    background-color: transparent;
+    color: blue;
+}
